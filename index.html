@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibnu Hanapi - Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-i"></i>
+                    <div class="logo-text">Ibnu Hanapi</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portofolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/profil.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input"> Frontend Developer</span></h5>
+                    <h1>Ibnu hanapi</h1>
+                    <p>Perkenalkan Saya lulusan Universitas Bhayangkara Jakarta Raya dengan Jurusan Teknik Informatika memiliki minat berkarir di dunia IT dan memiliki beberapa pengalaman magang di berbagai instansi dan berhasil lulus dengan IPK 3.43</p>
+
+                    <div class="btn-group">
+                        <a href="files/Ibnu hanapi cv.pdf" download="newname" class="btn active">Download CV</a>
+                        <a href="https://wa.me/08987061785" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/ibnu-hanapi-4334b11a4/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/hnf.ibnu?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=ibnuhanapi22@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- type js  text effect--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+    
+        togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+        })
+
+        var styped=new Typed(".input",{
+            strings:["Frontend Developer", "Backend Developer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        }) 
+    </script>
+</body>
+
+
+</html>
